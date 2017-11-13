@@ -1,0 +1,16 @@
+url: https://github.com/AsgardCms/Platform
+versions:
+    "2.2.0":
+        changed:
+            - Optimising the checking and loading of module translations (~20% speed increase)
+    "2.1.0":
+        changed:
+            - Fixed <code>whereKey</code> for laravel 5.4 where this now searches in <code>id</code> instead of <code>key</code> column
+    "2.0.0":
+        added:
+            - Laravel 5.4 compatibility
+        changed:
+            - Using new more flexible way of handle permissions via middleware
+            - Protecting api routes with api admin middleware
+        removed:
+            - Removing laracasts/flash dependency

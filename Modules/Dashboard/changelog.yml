@@ -1,0 +1,7 @@
+url: https://github.com/AsgardCms/Platform
+versions:
+    "2.0.0":
+        added:
+            - Laravel 5.4 compatibility
+        changed:
+            - Using new more flexible way of handle permissions via middleware

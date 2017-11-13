@@ -1,0 +1,34 @@
+url: https://github.com/AsgardCms/Platform
+versions:
+    "2.3.0":
+        added:
+            - New command <code>php artisan asgard:download:module asgardcms/contact --migrations --seeds --assets</code>
+            - New command <code>php artisan asgard:delete:module ModuleName --migrations</code>
+    "2.2.0":
+        added:
+            - Binding as a singleton in an asgard key if we're on the backend or not. Available as <code>app('asgard.onBackend')</code>
+    "2.0.0":
+        added:
+            - Laravel 5.4 compatibility
+            - <code>CanPublishConfiguration</code> helper trait
+            - <code>CanRequireAssets</code> helper trait
+            - added new <code>auth->user()</code> method to get the current user.
+            - run the user module migrations on installation
+            - user installer creates a first api token
+            - Adding minimised sitename setting viewed via minimised sidebar
+            - Added ability for modules to define a custom sidebar class for every module
+            - Adding configuration to set a custom ckeditor config file
+        changed:
+            - Using new more flexible way of handle permissions via middleware
+            - Public configuration files in a subfolder of config/ folder
+            - <code>auth->check</code> now returns a boolean.
+            - Don't load the application version on frontend theme (+ performance)
+            - Rename <code>MasterViewComposer</code> to <code>SiteNameViewComposer</code> to match its intent
+            - Loading the currently logged in user on every view
+            - Form Macros - Use HtmlString to allow users to use normal Blade "echo" braces
+        removed:
+            - Removing laracasts/flash dependency
+            - Removed depenency of unmaintained pingpong/modules in favor of nwidart/laravel-modules
+            - <code>Authentication</code> contract has been moved to the User module
+            - <code>Setting</code> contract has been moved to the Setting module
+            - Removed sisyphus usage

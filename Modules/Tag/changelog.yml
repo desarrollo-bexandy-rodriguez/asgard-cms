@@ -1,0 +1,9 @@
+url: https://github.com/AsgardCms/Platform
+versions:
+    "2.1.0":
+        changed:
+            - Fixed tags not being removed probably on update & delete
+
+    "2.0.0":
+        added:
+            - Initial Release

@@ -1,0 +1,12 @@
+url: https://github.com/AsgardCms/Platform
+versions:
+    "2.0.0":
+        added:
+            - Laravel 5.2 compatibility
+            - Add ability to set a plain setting value via <code>Modules\Setting\Support\Settings</code>
+            - new <code>@setting()</code> blade directive
+        changed:
+            - Using new more flexible way of handle permissions via middleware
+        removed:
+            - Removing laracasts/flash dependency
+            - <code>Setting</code> contract has been moved to the Setting module
